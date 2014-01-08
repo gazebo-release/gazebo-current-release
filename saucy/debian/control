@@ -1,4 +1,4 @@
-Source: gazebo-current-prerelease
+Source: gazebo-current
 Standards-Version: 3.9.3
 Maintainer: Nate Koenig <nate@osrfoundation.org>
 Section: devel
@@ -16,7 +16,7 @@ Build-Depends: cmake,
      libtinyxml-dev,
      libtar-dev,
      libtbb-dev,
-     libogre-dev,
+     libogre-1.8-dev,
      libxml2-dev,
      pkg-config,
      libqt4-dev,
@@ -33,12 +33,14 @@ Build-Depends: cmake,
      libavformat-dev,
      libavcodec-dev,
      libswscale-dev,
-     sdformat (>= 1.4.4~)
+     ruby-ronn,
+     libsdformat-dev (>= 1.4.7~)
 Vcs-Browser: https://bitbucket.org/osrf/gazebo-current-release
 Vcs-Hg: https://bitbucket.org/osrf/gazebo-current-release
 Homepage: http://gazebosim.org
 
-Package: gazebo-current-prerelease
+
+Package: gazebo-current
 Architecture: any
 Section: devel
 Priority: extra
@@ -51,30 +53,32 @@ Depends: libfreeimage3,
      libtar0,
      libtbb2,
      libtbb-dev,
-     libogre-dev,
+     libogre-1.8-dev,
      libxml2,
      pkg-config,
      libqtcore4,
      libqtgui4,
      libltdl7,
-     libboost-thread1.46.1,
-     libboost-signals1.46.1,
-     libboost-system1.46.1,
-     libboost-filesystem1.46.1,
-     libboost-program-options1.46.1,
-     libboost-regex1.46.1,
-     libboost-iostreams1.46.1,
+     libboost-thread1.53.0,
+     libboost-signals1.53.0,
+     libboost-system1.53.0,
+     libboost-filesystem1.53.0,
+     libboost-program-options1.53.0,
+     libboost-regex1.53.0,
+     libboost-iostreams1.53.0,
      robot-player,
-     libcegui-mk2-0.7.5,
+     libcegui-mk2-0.7.6,
      libcegui-mk2-dev,
      libavformat53 | libavformat-extra-53,
      libavcodec53 | libavcodec-extra-53,
      libswscale2 | libswscale-extra-2,
-     sdformat (>= 1.4.4~),
+     libsdformat-dev (>= 1.4.7~),
      ttf-dejavu-core,
      ${misc:Depends}
 Provides: gazebo-provider
-Conflicts: gazebo, gazebo-prerelease, gazebo-current, gazebo-nightly
+Conflicts: gazebo,
+           gazebo-prerelease,
+           gazebo-nightly
 Description: Gazebo simulator - Main package
  Gazebo is a multi-robot simulator for outdoor environments. Like
  Stage (part of the Player project), it is capable of simulating a
@@ -86,13 +90,12 @@ Description: Gazebo simulator - Main package
  This package contains all the main files to make the simulator work,
  including executables, libraries, models, etc.
 
-Package: gazebo-current-prerelease-dbg
+Package: gazebo-current-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-    gazebo-current-prerelease (= ${binary:Version}), ${misc:Depends}
-Conflicts: gazebo-dbg, gazebo-prerelease-dbg, gazebo-nightly-dbg
+    gazebo-current (= ${binary:Version}), ${misc:Depends}
 Description: Gazebo simulator - Debugging symbols 
  Gazebo is a multi-robot simulator for outdoor environments. Like
  Stage (part of the Player project), it is capable of simulating a
