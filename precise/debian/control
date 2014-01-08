@@ -76,7 +76,7 @@ Depends: libfreeimage3,
      ${misc:Depends}
 Provides: gazebo-provider
 Conflicts: gazebo,
-           gazebo-prerelese, 
+           gazebo-prerelease, 
            gazebo-nightly
 Description: Gazebo simulator - Main package
  Gazebo is a multi-robot simulator for outdoor environments. Like
