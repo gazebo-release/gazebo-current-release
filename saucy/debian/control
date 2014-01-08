@@ -1,4 +1,4 @@
-Source: gazebo-current
+Source: gazebo-current-prerelease
 Standards-Version: 3.9.3
 Maintainer: Nate Koenig <nate@osrfoundation.org>
 Section: devel
@@ -40,7 +40,7 @@ Vcs-Hg: https://bitbucket.org/osrf/gazebo-current-release
 Homepage: http://gazebosim.org
 
 
-Package: gazebo-current
+Package: gazebo-current-prerelease
 Architecture: any
 Section: devel
 Priority: extra
@@ -90,12 +90,12 @@ Description: Gazebo simulator - Main package
  This package contains all the main files to make the simulator work,
  including executables, libraries, models, etc.
 
-Package: gazebo-current-dbg
+Package: gazebo-current-prerelease-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-    gazebo-current (= ${binary:Version}), ${misc:Depends}
+    gazebo-current-prerelease (= ${binary:Version}), ${misc:Depends}
 Description: Gazebo simulator - Debugging symbols 
  Gazebo is a multi-robot simulator for outdoor environments. Like
  Stage (part of the Player project), it is capable of simulating a
