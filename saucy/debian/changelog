@@ -1,6 +1,6 @@
-gazebo-current (2.2.0-1~saucy) saucy; urgency=high
+gazebo-current (2.2.1-1~saucy) saucy; urgency=high
 
-  * Release 2.2.0-1
+  * Release 2.2.1-1
 
  -- Jose Luis Rivero <jrivero@osrfoundation.org>  Fri, 10 Jan 2014 15:56:00 -0700
 
