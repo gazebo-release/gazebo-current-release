@@ -1,3 +1,9 @@
+gazebo-current (2.2.5-1~precise) precise; urgency=medium
+
+  * gazebo-current 2.2.5-1 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Thu, 20 Nov 2014 03:42:53 +0100
+
 gazebo-current (2.2.4-1~precise) precise; urgency=medium
 
   * gazebo-current 2.2.4-1 release
